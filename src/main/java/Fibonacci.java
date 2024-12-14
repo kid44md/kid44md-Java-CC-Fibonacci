@@ -15,6 +15,37 @@ public class Fibonacci {
      * @return the nth number of fibonacci sequence.
      */
     public int fib(int n){
-        return 0;
+        //FIRST CASE
+        // int input = 1;
+        // int expected = 1;
+//n = 1 
+//first = 0
+//second = 1
+//first + second = 1
+int iterative = n - 1; 
+int first = 0; 
+int second = 1;
+int total = 0;
+            if(n == 1){
+            return  first + second;
+            }
+
+        for(int i = 0; i < iterative; i++){
+            total = first + second; 
+            first = second;
+            second = total;
+            System.out.println(i + " INDEX");
+            System.out.println(total);
+            }
+
+        //SECOND CASE
+        // int input = 3;
+        // int expected = 2;
+
+        //THIRD CASE 
+        // int input = 6;
+        // int expected = 8;
+System.out.println(total + " RESULT");
+        return total;
     }
 }
